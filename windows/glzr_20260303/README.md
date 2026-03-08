@@ -5,7 +5,7 @@ Backup created: 2026-03-03
 ## Directory Structure
 
 ```
-glzr-backup/
+glzr-YYYYMMDD/
 ├── glazewm/
 │   └── config.yaml          # GlazeWM window manager config
 └── zebar/
@@ -33,11 +33,13 @@ glzr-backup/
 
 ```powershell
 # Copy configs back to Windows
-cp -r /home/jose/glzr-backup/glazewm/* /mnt/c/Users/Jose/.glzr/glazewm/
-cp -r /home/jose/glzr-backup/zebar/vanilla-clear/* /mnt/c/Users/Jose/.glzr/zebar/vanilla-clear/
+backup_path="/home/jose/repos/configs/windows/glzr_20260303"
+glzr_target="/mnt/c/Users/Jose/.glzr"
+cp -r $backup_path/* $glzr_target/glazewm/
+cp -r $backup_path/zebar/vanilla-clear/* $glzr_target/zebar/vanilla-clear/
 
 # Create runtime state file
-echo '{"hasNotifications":false,"apps":[],"count":0}' > /mnt/c/Users/Jose/.glzr/zebar/vanilla-clear/flash-state.json
+echo '{"hasNotifications":false,"apps":[],"count":0}' > $glzr_target/zebar/vanilla-clear/flash-state.json
 ```
 
 Then reload GlazeWM with `Alt+Shift+R`.
