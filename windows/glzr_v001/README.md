@@ -33,7 +33,7 @@ glzr-YYYYMMDD/
 
 ```powershell
 # Copy configs back to Windows
-backup_path="/home/jose/repos/configs/windows/glzr_20260303"
+backup_path="/home/jose/repos/configs/windows/glzr_v001"
 glzr_target="/mnt/c/Users/Jose/.glzr"
 cp -r $backup_path/* $glzr_target/glazewm/
 cp -r $backup_path/zebar/vanilla-clear/* $glzr_target/zebar/vanilla-clear/

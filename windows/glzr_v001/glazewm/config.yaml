@@ -125,9 +125,9 @@ window_behavior:
 
 workspaces:
   - name: '1'
-    bind_to_monitor: 0
-  - name: '2'
     bind_to_monitor: 1
+  - name: '2'
+    bind_to_monitor: 0
   - name: '3'
   - name: '4'
   - name: '5'
