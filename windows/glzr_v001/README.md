@@ -5,7 +5,7 @@ Backup created: 2026-03-03
 ## Directory Structure
 
 ```
-glzr-YYYYMMDD/
+glzr-vXXX/
 ├── glazewm/
 │   └── config.yaml          # GlazeWM window manager config
 └── zebar/
